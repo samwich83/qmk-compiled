@@ -1,0 +1,9 @@
+#####
+# this will compile a reviung41 with the following options
+#  - via compatible
+#  - elite pi controller (littlekeyboards)
+
+
+cd qmk_firmware/
+#qmk flash -c -kb reviung/reviung41 -km via -e CONVERT_TO=elite_pi
+qmk compile -c -kb reviung/reviung41 -km via -e CONVERT_TO=elite_pi
